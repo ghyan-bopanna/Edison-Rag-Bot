@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# Environment variables (Crucial to keep API keys safe!)
+.env
+*.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Project-specific Data & Vector DBs (Optional: uncomment if you don't want to push PDFs or indexes)
+# data/pdf/
+# chroma_db/
+# faiss_index/
+
+# Personal files (Exclude your resume if making the repository public)
+resume.tex
