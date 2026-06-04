@@ -1,5 +1,7 @@
 # 🔍 RAG — Retrieval-Augmented Generation Pipeline
 
+
+
 A hands-on Python project that explores and implements a **full Retrieval-Augmented Generation (RAG) pipeline** using LangChain, FAISS, Sentence Transformers, and Groq LLMs — all built and experimented in Jupyter Notebooks.
 
 ---
@@ -12,7 +14,7 @@ A hands-on Python project that explores and implements a **full Retrieval-Augmen
 - ✅ Query your own documents / domain-specific knowledge
 - ✅ Avoid expensive model fine-tuning
 
-![RAG Overview](./images/Rag.png)
+![Edison RAG Bot Hero Banner](./images/hero.png)
 
 ---
 
@@ -107,6 +109,8 @@ rag_retriever.retrieve("What diseases can my dog have")
 
 ```
 RAG/
+├── .streamlit/
+│   └── config.toml                 # Streamlit UI configuration
 ├── notebook/
 │   ├── document.ipynb              # Document loaders & LangChain Document structure
 │   ├── pdf_loader.ipynb            # Full RAG pipeline (ingestion → retrieval → generation)
@@ -116,7 +120,11 @@ RAG/
 │   └── pdf/                        # PDF files used in the pipeline
 ├── images/
 │   ├── Rag.png                     # RAG architecture diagram
-│   └── Data-Ingestion.png          # Data ingestion pipeline diagram
+│   ├── Data-Ingestion.png          # Data ingestion pipeline diagram
+│   └── hero.png                    # Hero banner image
+├── edison.png                      # Edison mascot image
+├── rag_pipeline.py                 # Core RAG pipeline logic
+├── streamlit_app.py                # Edison RAG Bot Streamlit UI
 ├── main.py                         # Entry point (placeholder)
 ├── requirements.txt                # Pip-compatible dependency list
 ├── pyproject.toml                  # uv project config
@@ -175,6 +183,20 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 pip install ipykernel
+```
+
+### 🖥️ Running the Streamlit App
+
+Once the installation is complete and your environment is set up:
+
+**Using `uv`:**
+```bash
+uv run streamlit run streamlit_app.py
+```
+
+**Using standard `venv`:**
+```bash
+streamlit run streamlit_app.py
 ```
 
 ---

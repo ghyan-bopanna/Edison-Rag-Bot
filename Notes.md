@@ -39,3 +39,13 @@ Steps:
 - `uv add ipykernal`
 
 - create document to store data efficiently (data pharsing)
+
+
+Once the install completes, run it with:
+
+bash
+uv run streamlit run streamlit_app.py
+Or if you're in the venv:
+
+bash
+streamlit run streamlit_app.py
