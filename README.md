@@ -16,6 +16,9 @@ A hands-on Python project that explores and implements a **full Retrieval-Augmen
 
 ![Edison RAG Bot Hero Banner](./images/hero.png)
 
+## Check It Out
+
+[Launch Edison RAH Bot ](https://edison-rag-bot.streamlit.app/)
 ---
 
 ## 📐 Architecture
